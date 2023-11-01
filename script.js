@@ -2,7 +2,7 @@ var isAuth = JSON.parse(localStorage.getItem("authInfo"));
 function signIn() {
   // if user is already authenticated just redirect to login page
   if (isAuth) {
-    location.href = "http://127.0.0.1:5500/login.html";
+    location.href = "./login.html";
   }
 
   let oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth";

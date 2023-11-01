@@ -50,7 +50,7 @@ function logout() {
         }
     }).then(data => {
         //redirecting to the homePage
-        location.href = "http://127.0.0.1:5500"
+        location.href = "./index.html"
         //delete from local Storage
         localStorage.removeItem("authInfo")
     })
