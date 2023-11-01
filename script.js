@@ -16,7 +16,7 @@ function signIn() {
   let params = {
     client_id:
       "705407135307-222h6coavvdndki1thsl3r3jvorcmtcu.apps.googleusercontent.com",
-    redirect_uri: "./login.html",
+    redirect_uri: "https://soumyasootar.github.io/google-Auth-sample/login.html",
     response_type: "token",
     scope:
       "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
