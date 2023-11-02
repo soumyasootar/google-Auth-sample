@@ -2,7 +2,7 @@ var isAuth = JSON.parse(localStorage.getItem("authInfo"));
 function signIn() {
   // if user is already authenticated just redirect to login page
   if (isAuth) {
-    location.href = "https://soumyasootar.github.io/google-Auth-sample/login.html";
+    location.href = "./login.html";
   }
 
   let oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth";
@@ -16,8 +16,8 @@ function signIn() {
   let params = {
     client_id:
       "705407135307-222h6coavvdndki1thsl3r3jvorcmtcu.apps.googleusercontent.com",
-    redirect_uri: "https://soumyasootar.github.io/google-Auth-sample/login.html",
-    response_type: "token",
+      redirect_uri: "https://soumyasootar.github.io/google-Auth-sample/login.html",
+      response_type: "token",
     scope:
       "https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube.readonly",
     include_granted_scopes: "true",

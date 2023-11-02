@@ -50,7 +50,7 @@ function logout() {
         }
     }).then(data => {
         //redirecting to the homePage
-        location.href = "https://soumyasootar.github.io/google-Auth-sample/index.html"
+        location.href = " "
         //delete from local Storage
         localStorage.removeItem("authInfo")
     })
